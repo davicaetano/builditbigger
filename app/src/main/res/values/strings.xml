@@ -1,0 +1,14 @@
+<resources>
+    <string name="instructions">Press the button for a delicious joke!</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_unit_id">ca-app-pub-5114563633998913/6288123185</string>
+    <string name="test_interstitial_ad_unit_id">ca-app-pub-5114563633998913/9160864384</string>
+    <string name="button_text">Tell Joke</string>
+    <string name="app_name">Build it Bigger</string>
+    <string name="joke_error">Error: Joke not downloaded</string>
+    <string name="connection_error">Connection error. Internet is not available.</string>
+    <string name="loading">Loading</string>
+    <string name="wait">Wait while loading...</string>
+    <string name="joke_key">joke</string>
+    <string name="isLoading_key">isLoading</string>
+</resources>
