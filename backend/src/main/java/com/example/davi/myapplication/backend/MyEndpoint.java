@@ -9,6 +9,7 @@ package com.example.davi.myapplication.backend;
 import com.google.api.server.spi.config.Api;
 import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;
+import com.udacity.gradle.builditbigger.JokeGenerator;
 
 /**
  * An endpoint class we are exposing
@@ -30,8 +31,8 @@ public class MyEndpoint
     public MyBean joke()
     {
         MyBean response = new MyBean();
-        response.setData("Q: Why did the ants dance on the jam jar?\nA: The lid said, \"Twist to open.\"");
+        JokeGenerator jokeGenerator = new JokeGenerator();
+        response.setData(jokeGenerator.JokeGen());
         return response;
     }
-
 }

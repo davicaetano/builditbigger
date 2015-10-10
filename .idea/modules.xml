@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/backend/backend.iml" filepath="$PROJECT_DIR$/backend/backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/builditbigger.iml" filepath="$PROJECT_DIR$/builditbigger.iml" />
       <module fileurl="file://$PROJECT_DIR$/jokeshow/jokeshow.iml" filepath="$PROJECT_DIR$/jokeshow/jokeshow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libjoke/libjoke.iml" filepath="$PROJECT_DIR$/libjoke/libjoke.iml" />
     </modules>
   </component>
 </project>

@@ -28,6 +28,5 @@ public class AsyncTaskTester extends AndroidTestCase implements AsyncJokeDownloa
     {
         output = s;
         signal.countDown();
-
     }
 }

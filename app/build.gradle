@@ -21,10 +21,6 @@ android {
     productFlavors{
         free{
             applicationId "com.udacity.gradle.builditbigger.free"
-            dependencies{
-                compile 'com.google.android.gms:play-services-ads:8.1.0'
-                //compile 'com.google.android.gms:play-services:7.8.0'
-            }
         }
         paid{
             applicationId "com.udacity.gradle.builditbigger.paid"
@@ -37,4 +33,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.0.0'
     compile project(path: ':backend', configuration: 'android-endpoints')
     compile project(':jokeshow')
+    freeCompile 'com.google.android.gms:play-services-ads:8.1.0'
 }

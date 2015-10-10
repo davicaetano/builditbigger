@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.2.3'
+        classpath 'com.android.tools.build:gradle:1.3.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -25,15 +25,17 @@ task A1(dependsOn: ":backend:appengineRun"){
 }
 task A2(dependsOn: ":app:connectedAndroidTest")
 task A3(dependsOn: ":backend:appengineStop")
+
 A2.mustRunAfter A1
 A3.mustRunAfter A2
 
 
 task asyncWithConnTask(dependsOn: [A1, A2, A3]) {
-    doFirst{println "Stop the backend service before run this task."
-    println "Before run this test you must open an AVD device."
-    println "Don't use a real device nor a 3rd part emulator like genymotion."
-    println "(This is necessary beucause the endpoint is local)"}
+    doFirst{
+        println "Stop the backend service before run this task."
+        println "Before run this test you must open an AVD device."
+        println "Don't use a real device nor a 3rd part emulator like genymotion."
+        println "(This is necessary beucause the endpoint is local)"}
     doLast {
         println '*********Task completed.*********'
     }
